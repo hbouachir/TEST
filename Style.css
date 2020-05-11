@@ -1,8 +1,15 @@
-.head{height:370px;
+header{position: relative;}
+.head{
+        width:100%;
     overflow: hidden;}
 .logo{height: 35px ;}
+.abs{ position:absolute;
+    bottom:350px;
+width: 100%;
+}
+.nav-link{
    
-.nav-link{color: burlywood !important;
+    color: burlywood !important;
     font-family: fantasy !important;
     font-weight: bold !important;
     font-size: 20px;}
@@ -16,14 +23,16 @@
 .form{margin-left: auto;
     margin-right: auto;
     width:75%}
-.area{width:100%;
+.area{width:80%;
+        margin-left:20px;
         }
 .country{padding-top: 18px;
         padding-bottom: 15px;}
 
 .flex1{display:flex;
         align-items: center;}
-.message{width:8%}
+.message{width:8%;
+        margin-left: 20px;}
 .vide{width: 100%;
         height:15px}
 .foot{background-color:rgb(21, 22, 22) !important ;
