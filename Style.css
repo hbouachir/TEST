@@ -40,13 +40,158 @@ width: 100%;
 .bio{height: 100px;
     }
 
-#work_list{ display: flex;
-         flex-wrap: wrap;
-         justify-content: space-evenly;
-         align-items: center;
-         align-self: stretch;}
-#work_list>div{border: solid 10px black;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-}
+    
+
+
+.flex1{display: flex ;
+
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: stretch;}
+.card{margin-bottom: 15px;
+        }
+.card:hover{box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
+            transition: 0.2s;}
+
+
+.navbar-toggler-icon{background-color:grey;
+                        border-radius: 5px;}
+.choose{text-align: center;
+    color: white;
+        height: 200px;
+        background-color: #999;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.8)}
+.cadre1{height: 200px;
+         width: 400px;
+            margin-right: auto;
+            margin-left: auto;
+            justify-items: center;
+          }
+          .cadre2{margin-top: 20px;}
+          .titre1{text-align: center;
+                  margin-bottom: 40px;
+                    }
+                  
+                  
+          .petit-titre{text-align: center;
+                      
+                    color: black;}
+            a{
+                text-decoration: none;}
+        .petit-titre:hover{cursor:pointer;
+                            color: blue;
+                            text-decoration: underline;}
+ @media only screen and (max-width:600px){
+    
+    .card{width: 90% !important;     
+               justify-self: center !important;}
+    .card-body>p{display: none;}
+           }
+.img1{width: 200px;}
+.flex2{display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background: #222;
+ }
+.container1{position:relative;
+            max-width:100%;
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: minmax(100px, auto);
+            margin: 40px;
+            grid-auto-flow: dense;
+            grid-gap: 10px;}
+        .container1 .box{
+            background: #333;
+            padding: 20px;
+            display:grid;
+            font-size:20px;
+            place-items: center;
+            text-align: center;
+            color: #fff;                      
+            transition:0.5s;
+
+        }   
+        .container1 .box:hover{
+            background: #e91e63;
+        }
+
+        .container1 .box img{
+            position: relative;
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .container1 .box:nth-child(1){
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .container1 .box:nth-child(2){
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .container1 .box:nth-child(4){
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .container1 .box:nth-child(5){
+            grid-column: span 3;
+            grid-row: span 1;
+        }
+        @media (max-width:991px){
+            .container1{
+                grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+                grid-template-rows: minmax(auto, auto);
+                }
+            .container1 .box{
+               grid-column: unset !important;
+               grid-row: unset !important;
+    
+            }   
+        }
+
+
+
+
+
+/*-->card*/
+        .card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+          }
+          
+          .title {
+            color: grey;
+            font-size: 18px;
+          }
+          
+        .card1>button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+          }
+          
+          .card1>a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+          }
+          
+         .card1>button:hover, .card1>a:hover {
+            opacity: 0.7;
+          }
+          
+    #work_list>div{
+
+                
+                align-self: stretch;
+                align-content: space-around;}

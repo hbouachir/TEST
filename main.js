@@ -15,7 +15,7 @@ Array.from(details).map(el=>{
     
     )
 
- 
+ if(!localStorage.key(0)){localStorage.setItem('workers', JSON.stringify([]))}
 
 btn_add.addEventListener('click',function(){
    

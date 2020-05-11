@@ -1,9 +1,24 @@
 
 
+
+
 const liste=document.querySelector('#work_list');
 
 JSON.parse(localStorage.getItem('workers')).map(el=>{
-let structure= `<div><h1>name   : ${el.Name}</h1><h3>age    :${el.age}</h3><h2>email :${el.email}</h2><p>biography : ${el.biography}</p></div>`
+let structure=`<div class="card1">
+<h1> ${el.Name}</h1>
+<p class="title">${el.age} years old </p>
+<p>${el.email}</p>
+<p>${el.biography}</p>
+
+<a href="#"><i class="fa fa-dribbble"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<button>X</button>
+</div>`
+
+
 let container=document.createElement('div')
 
 container.innerHTML=structure
